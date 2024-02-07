@@ -1,0 +1,18 @@
+expose:
+  type: ingress
+  tls:
+    enabled: true
+    certSource: auto
+    secret:
+      secretName: "harbor.158.160.143.58.traefik.me"
+  ingress:
+    hosts:
+      core: harbor.158.160.143.58.traefik.me
+    className: "nginx"
+    annotations:
+      ingress.kubernetes.io/ssl-redirect: "true"
+    harbor:
+      annotations:
+        kubernetes.io/tls-acme: "true"
+        cert-manager.io/cluster-issuer: "letsencrypt-prod"
+        cert-manager.io/acme-challenge-type: http01

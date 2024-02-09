@@ -6,4 +6,14 @@
 - [x] kubernetes-controllers
 - [x] kubernetes-networks
 - [x] kubernetes-security
-- kubernetes-volumes
+- [x] kubernetes-volumes
+- [x] kubernetes-templating
+- kubernetes-operators
+- kubernetes-monitoring
+- kubernetes-logging
+- kubernetes-gitops
+- kubernetes-vault
+- kubernetes-storage
+- kubernetes-debug
+- kubernetes-prod
+- project

@@ -1,0 +1,12 @@
+ingress:
+  enabled: true
+  annotations:
+    kubernetes.io/tls-acme: "true"
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    cert-manager.io/acme-challenge-type: http01
+  hosts:
+    - name: chartmuseum.158.160.143.58.traefik.me
+      path: /
+      tls: true
+      tlsSecret: chartmuseum.158.160.143.58.traefik.me
+  ingressClassName: nginx
